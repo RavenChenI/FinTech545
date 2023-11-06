@@ -287,7 +287,7 @@ def sim_result(portfolio, sim_prices):
             option_type = portfolio['OptionType'][i].lower()
             S = sim_prices
             X = float(portfolio['Strike'][i])
-            T = ((pd.to_datetime(portfolio['ExpirationDate'][i]) - pd.to_datetime('2023-03-03')).days - days_ahead)/365
+            T = ((pd.to_datetime(portfolio['ExpirationDate'][i]) - pd.to_datetime('2023-10-30')).days - days_ahead)/365
             r = 0.0525
             q = 0.0057
             b = r-q
